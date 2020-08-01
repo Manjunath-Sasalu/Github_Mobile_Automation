@@ -72,13 +72,14 @@ public class GitHubSearchPage extends BaseClass{
 		Utils.verifyWebElementPresent(weGithub);
 	}
 	
-	public void searchRepo()  {
+	public void searchRepo(String searchRepo)  {
 		
 		Utils.clickOnElement(txtSearchRepo);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		//Utils.typeValue(txtSearchRepo, configPropObj.getProperty("SEARCH_REPO"));
-		Utils.typeValue(txtSearchRepo,"Appium Test");
+		//Utils.typeValue(txtSearchRepo,"Appium Test");
+		Utils.typeValue(txtSearchRepo,searchRepo);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Utils.pressEnter(driver,txtSearchRepo);
 	}
