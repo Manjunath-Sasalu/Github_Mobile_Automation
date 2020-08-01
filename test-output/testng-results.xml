@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Github_Search" duration-ms="35028" started-at="2020-08-01T20:43:07 IST" finished-at="2020-08-01T20:43:42 IST">
+    <groups>
+    </groups>
+    <test name="appiumTest" duration-ms="35028" started-at="2020-08-01T20:43:07 IST" finished-at="2020-08-01T20:43:42 IST">
+      <class name="com.github.testCases.TC_GitHubSearch_001">
+        <test-method status="PASS" signature="setDesiredCapabilities(java.lang.String)[pri:0, instance:com.github.testCases.TC_GitHubSearch_001@41d477ed]" name="setDesiredCapabilities" is-config="true" duration-ms="22255" started-at="2020-08-01T20:43:07 IST" finished-at="2020-08-01T20:43:29 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[android]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDesiredCapabilities -->
+        <test-method status="PASS" signature="verifyGithubSearchRepo()[pri:0, instance:com.github.testCases.TC_GitHubSearch_001@41d477ed]" name="verifyGithubSearchRepo" duration-ms="11457" started-at="2020-08-01T20:43:29 IST" finished-at="2020-08-01T20:43:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGithubSearchRepo -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.github.testCases.TC_GitHubSearch_001@41d477ed]" name="tearDown" is-config="true" duration-ms="1127" started-at="2020-08-01T20:43:41 IST" finished-at="2020-08-01T20:43:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.github.testCases.TC_GitHubSearch_001 -->
+    </test> <!-- appiumTest -->
+  </suite> <!-- Github_Search -->
+</testng-results>

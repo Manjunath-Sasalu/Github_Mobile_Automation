@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Github_Search" >
+
+	<listeners>
+		<listener
+			class-name="com.github.utilities.ExtentReportManager" />
+	</listeners>  
+
+	<test name="appiumTest">
+		<parameter name="appium_type" value="android" />
+		<classes>
+			<class name="com.github.testCases.TC_GitHubSearch_001" />
+			
+		</classes>
+	</test>
+</suite>
