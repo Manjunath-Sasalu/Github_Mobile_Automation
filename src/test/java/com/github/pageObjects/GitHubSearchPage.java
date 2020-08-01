@@ -76,9 +76,10 @@ public class GitHubSearchPage extends BaseClass{
 		
 		Utils.clickOnElement(txtSearchRepo);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		Utils.typeValue(txtSearchRepo, "Appium Test");
+		
+		//Utils.typeValue(txtSearchRepo, configPropObj.getProperty("SEARCH_REPO"));
+		Utils.typeValue(txtSearchRepo,"Appium Test");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		//Thread.sleep(5000);
 		Utils.pressEnter(driver,txtSearchRepo);
 	}
 	

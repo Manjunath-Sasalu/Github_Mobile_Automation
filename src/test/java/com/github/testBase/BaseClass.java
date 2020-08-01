@@ -39,6 +39,7 @@ public class BaseClass {
 	public static String apkPath = System.getProperty("user.dir")+ "\\apk\\automation-github.apk";
 	public Logger logger=LogManager.getLogger(this.getClass());    // Log4j
 	public String selectedRepoName;
+	public String enterSearchRepo;
 	
 	@BeforeClass
 	@Parameters("appium_type")
@@ -49,6 +50,8 @@ public class BaseClass {
 		FileInputStream configfile = new FileInputStream(System.getProperty("user.dir") + "\\Configuration\\config.properties");
 		configPropObj.load(configfile);
 				// end of loading gconfig.properties file
+		enterSearchRepo=configPropObj.getProperty("SEARCH_REPO");
+		
 		if(type.equals("android"))
 		{
 			DesiredCapabilities dc= new DesiredCapabilities();
