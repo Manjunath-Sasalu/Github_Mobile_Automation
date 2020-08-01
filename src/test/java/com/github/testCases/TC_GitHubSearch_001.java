@@ -5,6 +5,10 @@ import org.testng.annotations.Test;
 import com.github.pageObjects.GitHubSearchPage;
 import com.github.testBase.BaseClass;
 
+/**
+ * @author Manjunath
+ *
+ */
 public class TC_GitHubSearch_001 extends BaseClass {
 	
 	@Test

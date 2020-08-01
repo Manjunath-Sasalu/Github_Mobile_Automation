@@ -25,6 +25,10 @@ import com.github.pageObjects.GitHubSearchPage;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
+/**
+ * @author Manjunath
+ *
+ */
 public class BaseClass {
 	
 	public AppiumDriver<WebElement> driver;

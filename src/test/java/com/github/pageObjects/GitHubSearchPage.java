@@ -19,7 +19,10 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 public class GitHubSearchPage extends BaseClass{
 	public AppiumDriver<WebElement> driver;
 	
-	
+	/**
+	 * @author Manjunath
+	 *
+	 */
 	public GitHubSearchPage(AppiumDriver<WebElement> driver) {
 		this.driver = driver;
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);

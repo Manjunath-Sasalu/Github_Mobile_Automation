@@ -9,6 +9,10 @@ import org.testng.Assert;
 
 import io.appium.java_client.AppiumDriver;
 
+/**
+ * @author Manjunath
+ *
+ */
 public class Utils {
 	
 	public static void typeValue(WebElement weElement, String value) {
@@ -16,19 +20,28 @@ public class Utils {
 		//webDriverExplicitWait()
 		weElement.sendKeys(value);
 	}
-	
+	/**
+	 * @author Manjunath
+	 *
+	 */	
 	public static void clickOnElement(WebElement weElement) {
 		weElement.click();
 		
 	}
-	
+	/**
+	 * @author Manjunath
+	 *
+	 */	
 	public static void pressEnter(AppiumDriver<WebElement> driver, WebElement weElement) {
 		Actions enter = new Actions(driver);
 		enter.sendKeys(Keys.ENTER).build().perform();
 		
 		//weElement.sendKeys(Keys.ENTER);
 	}
-	
+	/**
+	 * @author Manjunath
+	 *
+	 */
 	// Explicit waits
 		public static void webDriverExplicitWait(AppiumDriver<WebElement> driver, WebElement weElement, String action, int timeInSeconds) {
 			  
@@ -42,12 +55,19 @@ public class Utils {
 			  }     
 			  
 		  }
-		
+		/**
+		 * @author Manjunath
+		 *
+		 */	
 		public static String getEWebElementText(WebElement weElement)
 		{
 			return weElement.getText();
 		}
-		
+		/**
+		 * @author Manjunath
+		 * @param weElement
+		 *
+		 */
 		public static void verifyWebElementPresent(WebElement weElement) {
 			
 			if(weElement.isDisplayed()) {
